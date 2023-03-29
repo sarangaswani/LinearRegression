@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Linear Regression Calculator</title>
+    <link rel="stylesheet" href="code.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Linear Regression Calculator</h1>
+      <form id="linear-regression-form">
+        <div class="form-group">
+          <label for="x-input">Enter X values (comma separated):</label>
+          <input type="text" id="x-input" name="x-input" required>
+        </div>
+        <div class="form-group">
+          <label for="y-input">Enter Y values (comma separated):</label>
+          <input type="text" id="y-input" name="y-input" required>
+        </div>
+        <button type="submit" id="calculate-button">Calculate</button>
+      </form>
+      <div id="results-container" class="hidden">
+        <h2>Results:</h2>
+        <div id="slope-result"></div>
+        <div id="intercept-result"></div>
+        <div id="line-result"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="code.js"></script>
+  </body>
+</html>
